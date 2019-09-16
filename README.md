@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Lapres_Modul1_JA04
 
 ### Oleh:
@@ -15,9 +14,9 @@ langsung gunakan `` port <alamat port>``
 port 21
 ```
 ##### Screenshot:
-<img src="img/Capture1.png" width="600">
+<img src="img/Capture1.PNG" width="600">
 port 21 adalah port ftp, dan tidak ada ftp yang sedang saya buka.
-<img src="img/Capture2.png" width="600">
+<img src="img/Capture2.PNG" width="600">
 
 ### NO2
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80 (ajk.if.its.ac.id)
@@ -27,8 +26,8 @@ Untuk mencari paket yang berasal dari port 80 yaitu ajk.if.its.ac.id dapat denga
 src port 80 && host ajk.if.its.ac.id
 ```
 ##### Screenshot:
-<img src="img/Capture3.png" width="600">
-<img src="img/Capture4.png" width="600">
+<img src="img/Capture3.PNG" width="600">
+<img src="img/Capture4.PNG" width="600">
 
 ### NO3
 Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.com)
@@ -37,8 +36,8 @@ Filter sehingga wireshark hanya menampilkan paket yang menuju port 443 (google.c
 dst port 443 && host google.com
 ````
 ##### Screenshot:
-<img src="img/Capture5.png" width="600">
-<img src="img/Capture6.png" width="600">
+<img src="img/Capture5.PNG" width="600">
+<img src="img/Capture6.PNG" width="600">
 
 ### NO4
 Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian
@@ -48,8 +47,8 @@ cek ip kita dengan ``ipconfig`` lalu gunakan ``ip src <ip4 kita>``
 ip src <ip kalian>
 ```
 ##### Screenshot:
-<img src="img/Capture7.png" width="600">
-<img src="img/Capture8.png" width="600">
+<img src="img/Capture7.PNG" width="600">
+<img src="img/Capture8.PNG" width="600">
 
 ### NO5
 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.ac.id
@@ -58,8 +57,8 @@ Filter sehingga wireshark hanya mengambil paket yang tujuannya ke monta.if.its.a
 dst host monta.if.its.ac.id
 ````
 ##### Screenshot:
-<img src="img/Capture9.png" width="600">
-<img src="img/Capture10.png" width="600">
+<img src="img/Capture9.PNG" width="600">
+<img src="img/Capture10.PNG" width="600">
 
 <br />
 
@@ -71,7 +70,7 @@ Tampilkan semua paket yang hostnya mengandung www.ne.its.ac.id
 http.host == ne.its.ac.id
 ```
 #### Screenshot:
-<img src="img/Capture11.png" width="600">
+<img src="img/Capture11.PNG" width="600">
 
 ### NO2
 Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.ac.id"
@@ -80,15 +79,15 @@ Tampilkan paket yang hanya berasal dari IP 10.151.36 81 dan menuju web "mb.its.a
 ip.src == 10.151.36.81 && http.host == "mb.its.ac.id"
 ```
 #### Screenshot:
-<img src="img/Capture12.png" width="600">
+<img src="img/Capture12.PNG" width="600">
 
 ### NO3
-Simpan gambar ckedokteran.png
+Simpan gambar ckedokteran.PNG
 #### Jawab:
-Tidak ada karena gambar ckedokteran.png memang tidak ada.
+Tidak ada karena gambar ckedokteran.PNG memang tidak ada.
 
 #### Screenshot:
-<img src="img/Capture13.png" width="600">
+<img src="img/Capture13.PNG" width="600">
 
 ### NO4
 Cari charset dari halaman "ajk.if.its.ac.id"
@@ -103,7 +102,7 @@ http.host == freeshare.lp.if.its.ac.id && frame contains login
 ```
 
 #### Screenshot:
-<img src="img/Capture14.png" width="600">
+<img src="img/Capture14.PNG" width="600">
 
 ### NO6
 Sebutkan web server yang digunakan pada "www.ne.its.ac.id"
@@ -114,7 +113,7 @@ http.host == ne.its.ac.id
 lalu klik kanan > follow > TCP stream.
 
 #### Screenshot:
-<img src="img/Capture15.png" width="600">
+<img src="img/Capture15.PNG" width="600">
 
 ### NO7
 Sebutkan versi PHP dan yang digunakan pada "riset.ajk.if.its.ac.id"
@@ -125,7 +124,7 @@ http.host == riset.ajk.if.its.ac.id
 lalu klik kanan > follow > TCP stream.
 
 #### Screenshot:
-<img src="img/Capture16.png" width="600">
+<img src="img/Capture16.PNG" width="600">
 
 ### NO8
 Filter pada wireshark kalian sehingga menampilkan hasil ping
@@ -135,7 +134,7 @@ icmp
 ```
 
 #### Screenshot:
-<img src="img/Capture17.png" width="600">
+<img src="img/Capture17.PNG" width="600">
 
 ### NO9
 Dapatkan semua metode GET yang mengakses "monta.if.its.ac.id"
@@ -145,7 +144,7 @@ http.request.method == GET && http.host == monta.if.its.ac.id
 ```
 
 #### Screenshot:
-<img src="img/Capture18.png" width="600">
+<img src="img/Capture18.PNG" width="600">
 
 ### NO10
 Tunjukkan username dan password yang dimasukkan ketika login FTP
@@ -155,7 +154,7 @@ ftp.request.command == USER || ftp.request.command == PASS
 ```
 
 #### Screenshot:
-<img src="img/Capture19.png" width="600">
+<img src="img/Capture19.PNG" width="600">
 
 ### NO11
 Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika upload file 
@@ -165,7 +164,7 @@ ftp.request.command == STOR && ftp.request.arg == qwpeaspojdasjfpasjfpaosuhuy.jp
 ```
 
 #### Screenshot:
-<img src="img/Capture20.png" width="600">
+<img src="img/Capture20.PNG" width="600">
 
 ### NO12
 Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika menghapus file 
@@ -179,29 +178,29 @@ cek:
 ```
 ftp.request.command == DELE
 ```
-hanya file tersebut yg ada (cek Capture22.png)
+hanya file tersebut yg ada (cek Capture22.PNG)
 #### Screenshot:
-<img src="img/Capture21.png" width="600">
-<img src="img/Capture22.png" width="600">
+<img src="img/Capture21.PNG" width="600">
+<img src="img/Capture22.PNG" width="600">
 
 ### NO13
-Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.png"
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika mengganti nama file "sutlin.PNG"
 #### Jawab:
 ```
-ftp.request.command == RNFR && ftp.request.arg == sutlin.png
+ftp.request.command == RNFR && ftp.request.arg == sutlin.PNG
 ```
 #### Screenshot:
-<img src="img/Capture23.png" width="600">
+<img src="img/Capture23.PNG" width="600">
 
 ### NO14
-Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.png"
+Tunjukkan di wireshark, paket mana yang dikirimkan FTP client ketika download file "sutlun.PNG"
 #### Jawab:
 ```
-ftp.request.command == RETR && ftp.request.arg == sutlun.png
+ftp.request.command == RETR && ftp.request.arg == sutlun.PNG
 ```
 
 #### Screenshot:
-<img src="img/Capture24.png" width="600">
+<img src="img/Capture24.PNG" width="600">
 
 ### NO15
 Cari file .zip di wireshark lalu download dan extract file tersebut <br />
@@ -219,11 +218,11 @@ ftp-data
 7. ekstrak zip dan lihat keajaibannya!
 
 #### Screenshot:
-<img src="img/Capture25.png" width="600">
-<img src="img/Capture26.png" width="600">
-<img src="img/Capture27.png" width="600">
-<img src="img/Capture27.png" width="600">
-<img src="img/Capture28.png" width="600">
+<img src="img/Capture25.PNG" width="600">
+<img src="img/Capture26.PNG" width="600">
+<img src="img/Capture27.PNG" width="600">
+<img src="img/Capture27.PNG" width="600">
+<img src="img/Capture28.PNG" width="600">
 
 =======
 # Lapres Modul1 Jarkom
