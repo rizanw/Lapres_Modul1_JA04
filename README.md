@@ -1,7 +1,7 @@
 # Lapres_Modul1_JA04
 
 ### Kelompok A04:
-- Iman Afandy ()
+- Iman Afandy (05111740000129)
 - Mochamad Thiesa Nabil (05111740000194)
 - Rizky Andre Wibisono (05111740000183)
 
